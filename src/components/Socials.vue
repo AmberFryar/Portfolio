@@ -13,6 +13,7 @@
     margin-right: 3px;
     height: 18px;
 }
+
 a :hover {
     color: rgb(181 51 137);
 }
