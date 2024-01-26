@@ -1,5 +1,3 @@
-
-/* TODO: Once Project component is biult out, activate routerlink */
 <template>
   <hr>
   <section id='banner'>
@@ -10,13 +8,14 @@
     <div class="dropDownMenu">
       <font-awesome-icon icon="fa-bars" class="menuIcon" @click="toggleDisplayMenu" />
       <div :class="menuLinksClass">
+       <router-link id='experience' :to="{ name: 'experience' }">
+          <h4 id="experience">Experience</h4>
+        </router-link> 
+        <router-link id="projects" :to="{ name: 'projects'}">
+          <h4 id="projects">Projects</h4>
+        </router-link>
         <router-link id='about' :to="{ name: 'about' }">
           <h4 id="about">About Me</h4>
-        </router-link>
-        <!-- <router-link id='projects' :to="{ name: 'projects'}"><h4>Projects</h4></router-link> -->
-        <a id="projects" href="https://github.com/dix06001/ReadMe">Projects</a>
-        <router-link id='experience' :to="{ name: 'experience' }">
-          <h4 id="experience">Experience</h4>
         </router-link>
       </div>
     </div>
@@ -50,7 +49,8 @@ export default {
 }
 </script>
 
-<style scoped>    #banner {
+<style scoped>    
+    #banner {
       display: grid;
       grid-template-columns: .5fr 2fr 3fr;
       grid-template-areas: "socials home menuLinks";
@@ -72,7 +72,7 @@ export default {
       grid-area: menuLinks;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "about projects experience";
+      grid-template-areas: "experience projects about";
       align-items: baseline;
       justify-content: right;
     }
@@ -95,11 +95,14 @@ export default {
       justify-content: center;
     }
 
-    #experience {
+    #experience {  
+      display: flex;
       grid-area: experience;
       text-decoration: none;
       color: black;
       font-weight: bold;
+      justify-content: center;
+ 
     }
 
     Socials {
@@ -135,7 +138,7 @@ export default {
         z-index: 1;
       }
 
-      .menuIcon:hover .menuLinks {
+      .menuIcon :hover .menuLinks {
         display: block;
         justify-content: right;
       }
