@@ -1,4 +1,3 @@
-/* TODO: Once Project component is biult out, activate routerlink */
 <template>
     <section class="menuItems">
         <div>
@@ -7,10 +6,7 @@
             </router-link>
         </div>
         <div>
-            <a id="projects" href="https://github.com/AmberFryar/ReadMe">
-                <h2>Projects</h2>
-            </a>
-            <!-- <router-link id='projects' :to="{ name: 'projects'}"> <h2>Projects</h2> </router-link> -->
+            <router-link id='projects' :to="{ name: 'projects'}"> <h2>Projects</h2> </router-link>
         </div>
         <div>
             <router-link id='about' :to="{ name: 'about' }">

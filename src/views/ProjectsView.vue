@@ -2,7 +2,7 @@
 <template>
   <NavBanner />
   <Projects />
-  Projects View
+  
 </template>
 
 <script setup>
