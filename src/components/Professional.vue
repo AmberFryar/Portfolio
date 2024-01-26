@@ -8,7 +8,7 @@
             <h3>University of Northern Colorado</h3>
             <ul>
                 <li>Bachelor of Science in Biological Sciences</li>
-                <li>Secondary Education Liscense</li>
+                <li>Secondary Education License</li>
             </ul>
             <h3>Leadership</h3>
             <ul>

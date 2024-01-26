@@ -2,46 +2,46 @@
 // TODO: make JSON file to hold data instead of hardcoding here. 1 container- loop through data array to create multiple projects
 
 <template>
-    <div class="project" id="E-Commerce">
+    <div class="project" @mouseover= "hoverIn" @mouseout= "hoverOut" :style="{borderWidth, borderColor}" id="E-Commerce">
         <div class="imgContainer">
-            <img class="imgBW" src="/src/assets/P_SSG_homepage_BW.png" />
+            <img class="imgBW" :style ="{opacity}" src="/src/assets/P_SSG_homepage_BW.png" />
             <img class="imgColor" src="/src/assets/P_SSG_homepage.png" />
         </div>
         <div class="info">
             <h3 class="name">E-Commerce</h3>
             <h4 class="description">Full Stack website featuring responsive single page application (SPA) website, user
                 authentication, and CRUD API endpoints to manipulate a relational database.</h4>
-            <div class="tech"><font-awesome-icon class="icons" :icon="['fab', 'java']" />
+            <div class="tech" ><font-awesome-icon class="icons" :icon="['fab', 'java']" />
                 <font-awesome-icon class="icons" :icon="['fab', 'vuejs']" />
                 <font-awesome-icon class="icons" :icon="['fab', 'js-square']" />
                 <font-awesome-icon class="icons" :icon="['fas', 'database']" />
             </div>
-            <a href="https://github.com/AmberFryar/E-Commerce#e-commerce" target="_blank">
+            <a href="https://github.com/AmberFryar/E-Commerce#e-commerce" target="_blank" :style = "{color}">
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-right']" />
                 <font-awesome-icon class="GitHub" :icon="['fab', 'square-github']" />
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-left']" /> </a>
         </div>
     </div>
-    <div class="project" id="Catalog">
+    <div class="project" @mouseover= "hoverIn" @mouseout= "hoverOut" :style="{borderWidth, borderColor}" id="Catalog">
         <div class="imgContainer">
             <img class="imgColor" src="/src/assets/P_Catalog_search.png" />
-            <img class="imgBW" src="/src/assets/P_Catalog_search_BW.png" />
+            <img class="imgBW" :style ="{opacity}" src="/src/assets/P_Catalog_search_BW.png" />
         </div>
         <div class="info">
             <h3 class="name">Catalog Search</h3>
             <h4 class="description"> Command Line Application (CLI) program that allows users to search and display from a
                 catalog.</h4>
             <div class="tech"><font-awesome-icon class="icons" :icon="['fab', 'java']" /> </div>
-            <a href="https://github.com/AmberFryar/Catalog-Search#catalog" target="_blank">
+            <a href="https://github.com/AmberFryar/Catalog-Search#catalog" target="_blank" :style = "{color}">
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-right']" />
                 <font-awesome-icon class="GitHub" :icon="['fab', 'square-github']" />
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-left']" /> </a>
         </div>
     </div>
-    <div class="project" id="Portfolio">
+    <div class="project" @mouseover= "hoverIn" @mouseout= "hoverOut" :style="{borderWidth, borderColor}" id="Portfolio">
         <div class="imgContainer">
             <img class="imgColor" src="/src/assets/P_Portfolio.png" />
-            <img class="imgBW" src="/src/assets/P_Portfolio_BW1.png" />
+            <img class="imgBW" :style ="{opacity}" src="/src/assets/P_Portfolio_BW1.png" />
         </div>
         <div class="info">
             <h3 class="name">Portfolio</h3>
@@ -50,7 +50,7 @@
             <div class="tech"><font-awesome-icon class="icons" :icon="['fab', 'vuejs']" />
                 <font-awesome-icon class="icons" :icon="['fab', 'js-square']" />
             </div>
-            <a href="https://github.com/AmberFryar/Portfolio#portfolio-website" target="_blank">
+            <a href="https://github.com/AmberFryar/Portfolio#portfolio-website" target="_blank" :style = "{color}">
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-right']" />
                 <font-awesome-icon class="GitHub" :icon="['fab', 'square-github']" />
                 <font-awesome-icon class="arrow" :icon="['fas', 'arrow-left']" /> </a>
@@ -59,6 +59,35 @@
     </div>
 </template>
 <script>
+    export default {
+        data () {
+            return {
+                borderWidth: "thin",
+                borderColor: "black",
+                opacity: 1,
+                color: "black"
+            
+            }
+        },
+        computed:{
+            
+        },
+        methods: {
+            hoverIn() {
+                this.borderWidth = "medium"
+                this.borderColor = "rgb(181 51 137)"
+                this.opacity = 0
+                this.color = "rgb(181 51 137)"
+            },
+            hoverOut() {
+                this.borderWidth = "thin"
+                this.borderColor = "black"
+                this.opacity = "1"
+                this.color = "black"
+
+            }
+        }
+    }
 
 </script>
 <style scoped>
@@ -90,16 +119,11 @@
 }
 
 .name {
-    color: rgb(181 51 137);
+    color: #b53389;
 }
 
 h3 {
     font-weight: bold;
-}
-
-.project:hover {
-    border-width: medium;
-    border-color: rgb(181 51 137);
 }
 
 .imgContainer {
@@ -118,14 +142,10 @@ h3 {
 }
 
 .imgBW {
-    position: fixed;
+    position: absolute;
     height: 120px;
     align-self: center;
 
-}
-
-.imgBW:hover {
-    opacity: 0;
 }
 
 .imgColor {
@@ -150,6 +170,14 @@ a {
 .arrow {
     margin-bottom: 4px;
 }
+/* .project:hover {
+    border-width: medium;
+    border-color: rgb(181 51 137);
+} */
+
+/* .imgBW:hover {
+    opacity: 0;
+} */
 
 @media only screen and (max-width: 821px) {
     .project {

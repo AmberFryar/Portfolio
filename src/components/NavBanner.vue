@@ -8,14 +8,14 @@
     <div class="dropDownMenu">
       <font-awesome-icon icon="fa-bars" class="menuIcon" @click="toggleDisplayMenu" />
       <div :class="menuLinksClass">
-       <router-link id='experience' :to="{ name: 'experience' }">
-          <h4 id="experience">Experience</h4>
+       <router-link  id='experienceView' :to="{ name: 'experience' }">
+          <h4 class= "navLinks" id="experience">Experience</h4>
         </router-link> 
-        <router-link id="projects" :to="{ name: 'projects'}">
-          <h4 id="projects">Projects</h4>
+        <router-link id='projectsView' :to="{ name: 'projects'}">
+          <h4 class= "navLinks">Projects</h4>
         </router-link>
-        <router-link id='about' :to="{ name: 'about' }">
-          <h4 id="about">About Me</h4>
+        <router-link id='aboutView' :to="{ name: 'about' }">
+          <h4 class= "navLinks">About Me</h4>
         </router-link>
       </div>
     </div>
@@ -25,7 +25,7 @@
 
 <script>
 import Socials from './Socials.vue';
-
+//export default components instead of script setup
 export default {
   components: {
     Socials
@@ -77,32 +77,30 @@ export default {
       justify-content: right;
     }
 
-    #about {
+    #aboutView {
       display: flex;
       grid-area: about;
       text-decoration: none;
-      color: black;
-      font-weight: bold;
       justify-content: center;
     }
 
-    #projects {
+    #projectsView {
       display: flex;
       grid-area: projects;
       text-decoration: none;
-      color: black;
-      font-weight: bold;
       justify-content: center;
     }
 
-    #experience {  
+    #experienceView {  
       display: flex;
       grid-area: experience;
       text-decoration: none;
-      color: black;
-      font-weight: bold;
       justify-content: center;
- 
+    }
+    .navLinks{
+      color:black;
+      font-weight: bold;
+      
     }
 
     Socials {
@@ -112,7 +110,7 @@ export default {
     h1 {
       text-decoration: none;
     }
-
+   
     @media only screen and (max-width: 817px) {
       .menuIcon {
         display: block;
@@ -120,10 +118,10 @@ export default {
         margin-left: 75%;
       }
 
-      .dropDownMenu {
+      /* .dropDownMenu {
         position: relative;
         display: inline-block;
-      }
+      } */
 
       .menuLinks {
         display: none;
@@ -138,9 +136,16 @@ export default {
         z-index: 1;
       }
 
-      .menuIcon :hover .menuLinks {
+      /* .menuIcon :hover .menuLinks {
         display: block;
         justify-content: right;
+      } */
+
+      /* .navLinks {
+        display: none;
+      } */
+      .navLinks:hover  {
+        color:rgb(181 51 137);
       }
 
       #banner {
@@ -156,4 +161,5 @@ export default {
         justify-content: center;
         text-align: center;
       }
-    }</style>
+    }
+    </style>
