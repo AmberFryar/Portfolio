@@ -5,7 +5,7 @@
         <img class="imgBW" src="/src/assets/P_SSG_homepage_BW.png" />
         <div class="info">
             <h3 class="name">E-Commerce</h3>
-            <h4 class="description">Full Stack website featuring responsive SPA website, user authentication, multiple API endpoints to manipulate a relational database.</h4>
+            <h4 class="description">Full Stack website featuring responsive single page application (SPA) website, user authentication, and CRUD API endpoints to manipulate a relational database.</h4>
             <div class="tech"><font-awesome-icon class= "icons" :icon="['fab', 'java']" /> 
                               <font-awesome-icon class= "icons" :icon="['fab', 'vuejs']" /> 
                               <font-awesome-icon class= "icons" :icon="['fab', 'js-square']" /> 
@@ -19,7 +19,7 @@
         <img class="imgBW" src="/src/assets/P_Catalog_search_BW.png" />
         <div class="info">
             <h3 class="name">Catalog Search</h3>
-            <h4 class="description">Back-End CLI program that allows users to search and display catalog.</h4>
+            <h4 class="description"> Command Line Application (CLI) program that allows users to search and display from a catalog.</h4>
             <div class="tech"><font-awesome-icon class= "icons" :icon="['fab', 'java']" /> </div>
             <a href="https://github.com/AmberFryar/Catalog-Search#catalog" target="_blank"> 
                 <font-awesome-icon class= "arrow" :icon="['fas', 'arrow-right']" /> <font-awesome-icon class= "GitHub" :icon="['fab', 'square-github']" /> <font-awesome-icon class= "arrow" :icon="['fas', 'arrow-left']" /> </a>
@@ -31,7 +31,7 @@
         <img class="imgBW" src="/src/assets/P_Portfolio_BW1.png" />
         <div class="info">
             <h3 class="name">Portfolio</h3>
-            <h4 class="description"> Front-End single page application that responds to various screensizes to effectively display content.</h4>
+            <h4 class="description"> Single page application (SPA) that is mobile responsive to effectively display my work.</h4>
             <div class="tech"><font-awesome-icon class= "icons" :icon="['fab', 'vuejs']" /> 
                               <font-awesome-icon class= "icons" :icon="['fab', 'js-square']" /></div>
             <a href="https://github.com/AmberFryar/Portfolio#portfolio-website" target="_blank">  
