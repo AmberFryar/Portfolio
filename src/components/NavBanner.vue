@@ -6,7 +6,7 @@
       <h1 id="home">Amber Fryar </h1>
     </router-link>
     <div class="dropDownMenu">
-      <font-awesome-icon icon="fa-bars" class="menuIcon" @click="toggleDisplayMenu" />
+      <icon icon="fa-bars" class="menuIcon" @click="toggleDisplayMenu" />
       <div :class="menuLinksClass">
        <router-link  id='experienceView' :to="{ name: 'experience' }">
           <h4 class= "navLinks" id="experience">Experience</h4>

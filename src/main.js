@@ -13,5 +13,5 @@ library.add(faBars, faLinkedin, faGithubSquare, faArrowRight, faArrowLeft, faVue
 const app = createApp(App)
 
 app.use(router)
-app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('icon', FontAwesomeIcon)
 app.mount('#app')

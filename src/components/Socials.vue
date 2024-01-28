@@ -1,10 +1,16 @@
 <template>
     <div>
-        <a href="https://github.com/AmberFryar" target="_blank"> <font-awesome-icon :icon="['fab', 'square-github']" /> </a>
-        <a href="https://www.linkedin.com/in/amber-fryar/" target="_blank"> <font-awesome-icon :icon="['fab', 'linkedin']" /> </a>
+        <a href="https://github.com/AmberFryar" target="_blank"> <icon :icon="['fab', 'square-github']" /> </a>
+        <a href="https://www.linkedin.com/in/amber-fryar/" target="_blank"> <icon :icon="['fab', 'linkedin']" /> </a>
     </div>
 </template>
-
+<script>
+export default{
+    data(){
+        return {}
+    }
+}
+</script>
 <style scoped>
 * {
     color: black;
