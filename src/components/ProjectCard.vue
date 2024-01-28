@@ -14,7 +14,7 @@
       <h4 class="description"> {{ project.description }}</h4>
       <a :href="project.link" target="_blank">
         <button :style="{ backgroundColor }">
-          <icon class="GitHub" :icon="['fab', 'github']" />
+          <icon id="GitHub" :icon="['fab', 'github']" />
         </button>
       </a>
     </div>
@@ -124,9 +124,13 @@ a {
 }
 
 button {
+  border-width: thin;
   border-radius: 15%;
   width: 50px;
   height: 25px;
+}
+#GitHub {
+  color: black;
 }
 
 @media only screen and (max-width: 821px) {
@@ -136,10 +140,6 @@ button {
     grid-template-areas:
       "info"
       "imgContainer";
-  }
-
-  .imgBW {
-    width: fit-content;
   }
 }
 </style>
