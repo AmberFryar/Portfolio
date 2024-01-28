@@ -8,14 +8,14 @@
     <div class="dropDownMenu">
       <icon icon="fa-bars" class="menuIcon" @click="toggleDisplayMenu" />
       <div :class="menuLinksClass">
-       <router-link  id='experienceView' :to="{ name: 'experience' }">
-          <h4 class= "navLinks" id="experience">Experience</h4>
-        </router-link> 
-        <router-link id='projectsView' :to="{ name: 'projects'}">
-          <h4 class= "navLinks">Projects</h4>
+        <router-link id='experienceView' :to="{ name: 'experience' }">
+          <h4 class="navLinks" id="experience">Experience</h4>
+        </router-link>
+        <router-link id='projectsView' :to="{ name: 'projects' }">
+          <h4 class="navLinks">Projects</h4>
         </router-link>
         <router-link id='aboutView' :to="{ name: 'about' }">
-          <h4 class= "navLinks">About Me</h4>
+          <h4 class="navLinks">About Me</h4>
         </router-link>
       </div>
     </div>
@@ -49,8 +49,7 @@ export default {
 }
 </script>
 
-<style scoped>    
-    #banner {
+<style scoped>    #banner {
       display: grid;
       grid-template-columns: .5fr 2fr 3fr;
       grid-template-areas: "socials home menuLinks";
@@ -91,16 +90,17 @@ export default {
       justify-content: center;
     }
 
-    #experienceView {  
+    #experienceView {
       display: flex;
       grid-area: experience;
       text-decoration: none;
       justify-content: center;
     }
-    .navLinks{
-      color:black;
+
+    .navLinks {
+      color: black;
       font-weight: bold;
-      
+
     }
 
     Socials {
@@ -110,18 +110,13 @@ export default {
     h1 {
       text-decoration: none;
     }
-   
+
     @media only screen and (max-width: 817px) {
       .menuIcon {
         display: block;
         margin-right: 25%;
         margin-left: 75%;
       }
-
-      /* .dropDownMenu {
-        position: relative;
-        display: inline-block;
-      } */
 
       .menuLinks {
         display: none;
@@ -136,16 +131,8 @@ export default {
         z-index: 1;
       }
 
-      /* .menuIcon :hover .menuLinks {
-        display: block;
-        justify-content: right;
-      } */
-
-      /* .navLinks {
-        display: none;
-      } */
-      .navLinks:hover  {
-        color:rgb(181 51 137);
+      .navLinks:hover {
+        color: rgb(181 51 137);
       }
 
       #banner {
@@ -162,4 +149,4 @@ export default {
         text-align: center;
       }
     }
-    </style>
+</style>

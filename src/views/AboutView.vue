@@ -6,6 +6,6 @@
 </template>
 
 <script setup>
-  import NavBanner from '../components/NavBanner.vue';
-  import About from '../components/About.vue';
+import NavBanner from '../components/NavBanner.vue';
+import About from '../components/About.vue';
 </script>

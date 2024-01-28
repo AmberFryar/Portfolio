@@ -1,7 +1,7 @@
 
 <template>
   <NavBanner />
-  <ProjectCard v-for="project in projects" :key= "project.name" :project="project" />
+  <ProjectCard v-for="project in projects" :key="project.name" :project="project" />
 </template>
 
 <script >

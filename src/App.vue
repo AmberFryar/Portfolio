@@ -1,15 +1,15 @@
 <template>
   <header>
-  
+
   </header>
   <main>
-    <RouterView />  
+    <RouterView />
   </main>
   <hr>
   <footer>
-    <AppFooter/>
+    <AppFooter />
     <Socials />
-  </footer>  
+  </footer>
 </template>
 
 <script setup>
@@ -20,7 +20,6 @@ import Socials from './components/Socials.vue';
 </script>
 
 <style >
-
 footer {
   display: inline-flex;
 }

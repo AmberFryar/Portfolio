@@ -2,28 +2,35 @@
     {
         "name": "E-Commerce",
         "description": "Full Stack website featuring responsive single page application (SPA) website, user authentication, and CRUD API endpoints to manipulate a relational database.",
-        "imgBW": "/src/assets/P_SSG_homepage_BW.png",
-        "imgColor": "/src/assets/P_SSG_homepage.png",
-        "icon": "fa-brands fa-java",
-        "GitHub": "GitHubIcon",
+        "imgBW": "P_SSG_homepage_BW.png",
+        "imgColor": "P_SSG_homepage.png",
+        "icons": [
+            "Java",
+            "Vue",
+            "Javascript",
+            "database"
+        ],
         "link": "https://github.com/AmberFryar/E-Commerce#e-commerce"
     },
     {
         "name": "Catalog Search",
         "description": "Command Line Application (CLI) program that allows users to search and display from a catalog.",
-        "imgBW": "/src/assets/P_Catalog_search_BW.png",
-        "imgColor": "/src/assets/P_Catalog_search.png",
-        "icon": "fa-brands fa-java",
-        "GitHub": "GitHubIcon",
+        "imgBW": "P_Catalog_search_BW.png",
+        "imgColor": "P_Catalog_search.png",
+        "icons": [
+            "Java"
+        ],
         "link": "https://github.com/AmberFryar/Catalog-Search#catalog"
     },
     {
         "name": "Portfolio",
         "description": "Single page application (SPA) that is mobile responsive to effectively display my work.",
-        "imgBW": "/src/assets/P_Portfolio_BW1.png",
-        "imgColor": "/src/assets/P_Portfolio.png",
-        "icon": "fa-brands fa-java",
-        "GitHub": "GitHubIcon",
+        "imgBW": "P_Portfolio_BW1.png",
+        "imgColor": "P_Portfolio.png",
+        "icons": [
+            "Vue",
+            "Javascript"
+        ],
         "link": "https://github.com/AmberFryar/Portfolio#portfolio-website"
-    }   
+    }
 ]

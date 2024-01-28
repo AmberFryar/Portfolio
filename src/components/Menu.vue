@@ -6,7 +6,9 @@
             </router-link>
         </div>
         <div>
-            <router-link id='projects' :to="{ name: 'projects'}"> <h2>Projects</h2> </router-link>
+            <router-link id='projects' :to="{ name: 'projects' }">
+                <h2>Projects</h2>
+            </router-link>
         </div>
         <div>
             <router-link id='about' :to="{ name: 'about' }">
@@ -49,8 +51,8 @@ div {
     color: black;
     border-style: solid;
     border-width: thin;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     text-align: center;
     margin: 50px;

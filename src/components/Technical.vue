@@ -39,4 +39,5 @@ h3 {
     .img {
         height: 125px;
     }
-}</style>
+}
+</style>
