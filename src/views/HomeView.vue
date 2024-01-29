@@ -1,7 +1,7 @@
 <template>
   <main>
     <div>
-      <img id="logo" src="../assets/logoblack.png" />
+      <img id="logo" src="../assets/Name.png" />
     </div>
     <section class="projects">
       <Menu />
@@ -20,8 +20,8 @@ div {
 }
 
 #logo {
-
-  width: 300px;
+  margin: 10%;
+  width: 400px;
 }
 
 .projects {

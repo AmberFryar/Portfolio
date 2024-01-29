@@ -5,3 +5,7 @@
 </template>
 
         
+<style>
+footer {
+    margin-top:auto
+}</style>

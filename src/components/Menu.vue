@@ -21,8 +21,11 @@
 
 <style scoped>
 .menuItems {
-    display: flex;
+    display: inline-flex;
+    align-items: baseline;
+    justify-items: center;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 #projects {
@@ -43,24 +46,18 @@
 
 h2 {
     margin-top: 37%;
+    font-size:x-large;
     font-weight: bolder;
 }
 
 div {
-
-    color: black;
-    border-style: solid;
-    border-width: thin;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    text-align: center;
     margin: 50px;
 }
 
 @media only screen and (max-width: 817px) {
     .menuItems {
-        display: block;
+        display: inline-block;
+        text-align: center;
     }
 }
 </style>

@@ -59,7 +59,6 @@
 }
 
 body {
-  /* background-image: url("../src/assets/background.jpg");                    */
   min-height: 100px;
   color: var(--color-text);
   transition:
