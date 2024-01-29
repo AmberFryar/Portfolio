@@ -45,7 +45,7 @@
 }
 
 h2 {
-    margin-top: 37%;
+    margin: 5%;
     font-size:x-large;
     font-weight: bolder;
 }

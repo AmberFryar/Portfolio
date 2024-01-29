@@ -1,6 +1,6 @@
 <template>
   <br>
-  <p> I love processes, projects, problem-solving, people, plants, pets, and apparently alliterations.
+  <p id = "firstParagraph"> I love processes, projects, problem-solving, people, plants, pets, and apparently alliterations.
     I recently completed Tech Elevator’s remote full-stack development boot camp. Prior to that accomplishment I earned
     my B.S. in Biological Sciences and obtained a secondary education license. With those credentials in hand,
     I returned to the place that most adults have tried to remove from memory- middle school.
@@ -31,6 +31,9 @@
   width: 55%;
 }
 
+#firstParagraph {
+  margin-top: 3%;
+}
 @media only screen and (max-width: 817px) {
   .img {
     width: 100%;

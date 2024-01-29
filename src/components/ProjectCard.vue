@@ -73,8 +73,8 @@ export default {
   border-radius: 15px;
   padding: 5px;
   margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 45px;
+  margin-bottom: 60px;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "imgContainer info";
 }
